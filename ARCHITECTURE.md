@@ -5,7 +5,8 @@
 A standalone, editorial story discovery site for My Logline. Every entry is rooted in India and starts with a documented real person or event, then offers an original film adaptation concept: a logline, synopsis, and a rough 13-beat outline. The page invites writers to develop their own screenplay in My Logline.
 
 **Local project:** `ideazone/mylogline`  
-**Proposed public home:** `ideazone.mylogline.com`  
+**Current public home:** `mylogline-idea-zone.vercel.app`  
+**Planned custom domain:** `ideazone.mylogline.com`  
 **Status:** implemented locally; deployment is a separate step.
 
 ## Experience and routes
@@ -87,7 +88,7 @@ Validation requires exactly 13 numbered beats, 2–3 research links, support for
 
 ## Integration and deployment boundary
 
-The site can be a separate Vercel project connected to `ideazone/mylogline`. Once approved for deployment, point `ideazone.mylogline.com` to it and add a Film Idea Zone link on the main My Logline site. The CTA links to the existing [My Logline app](https://app.mylogline.com/login); a prefilled draft handoff should wait until the app exposes a documented import/deep-link flow.
+The site is a separate Vercel project connected to the [GitHub repository](https://github.com/vamshicreates/mylogline-idea-zone). The public deployment is [mylogline-idea-zone.vercel.app](https://mylogline-idea-zone.vercel.app). To complete the My Logline integration, point `ideazone.mylogline.com` to this Vercel project, update the canonical base URL in `build.mjs`, and add a Film Idea Zone link on the main site. The CTA links to the existing [My Logline app](https://app.mylogline.com/login); a prefilled draft handoff should wait until the app exposes a documented import/deep-link flow.
 
 ## Build sequence
 

@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { stories, storyDna } from './stories.mjs';
 
 const out = join(import.meta.dirname, 'dist');
-const base = 'https://ideazone.mylogline.com';
+const base = 'https://mylogline-idea-zone.vercel.app';
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function validate() {
